@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Web Problem</title>
+  </head>
+  <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="unnamed.png"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Masih Bingung Cari Sekolah?<br> Pilih Saja <span>SMK Mutuharjo</span></h2>
+                <p>SMK Mutuharjo merupakan salah satu SMK Center of Excellence (CoE) & SMK Pusat Keunggulan (PK) di Indonesia.
+                    Terakreditasi A, fasilitas lengkap, peralatan terbaru dan tenaga pendidik yang kompeten. </p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="png/pplg.png" class="pplg">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="png/pplg.png" onclick="imgSlider('png/pplg.png');changeCircleColor('#3c3ffa')"></li>
+            <li><img src="png/tik.png" onclick="imgSlider('png/tik.png');changeCircleColor('#0c18a6')"></li>
+            <li><img src="png/tei.png" onclick="imgSlider('png/tei.png');changeCircleColor('#fafa3c')"></li>
+            <li><img src="png/tkr.png" onclick="imgSlider('png/tkr.png');changeCircleColor('#8e8f91')"></li>
+            <li><img src="png/to.png" onclick="imgSlider('png/to.png');changeCircleColor('#fc2845')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.pplg').src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+
+        </script>
+    </section>
+  </body>
+</html>
